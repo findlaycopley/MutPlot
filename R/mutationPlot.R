@@ -9,9 +9,11 @@
 #' @examples
 #' mutationPlot(Data, "SampleName", "GeneName", "Info")
 
-Data <- cbind(c("Sample1","Sample1","Sample2","Sample2"),
-              c("Gene1","Gene2","Gene2","Gene3"),
-              c("Missense","Missense","Fram shift","Missense")) %>% as.data.frame() %>% setNames(c("Sample","Gene","Info"))
+Data <- cbind(c("Sample1","Sample1","Sample1","Sample2","Sample2"),
+              c("Gene1","Gene2","Gene2","Gene2","Gene3"),
+              c("Missense","Missense","Frame shift","Frame shift","Missense")) %>%
+        as.data.frame() %>%
+        setNames(c("Sample","Gene","Info"))
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
 mutationPlot <- function(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info", FuncColour = FALSE) {
@@ -21,4 +23,6 @@ mutationPlot <- function(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info
         ReturnClass <- plotSampleCount(ReturnClass)
         ReturnClass <- plotLegend(ReturnClass)
         ReturnClass <- ComboMutPlot(ReturnClass)
-}
+        ReturnClass
+        }
+

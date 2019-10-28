@@ -15,12 +15,14 @@ plotGeneCount <- function(ReturnClass, FuncColour = FALSE) {
                 geom_bar(stat = "identity") +
                 labs(y = "Count", fill = "Type of Mutation") +
                 coord_flip() +
+                MutTheme +
                 theme(legend.position = "none",
                       axis.text.y = element_blank(),
                       axis.ticks.y = element_blank(),
                       axis.title.y = element_blank(),
                       panel.background = element_blank(),
-                      axis.line.x = element_line()) +
+                      axis.line.x = element_line()
+                      ) +
                 if (typeof(FuncColour) == "character" ) {
                         scale_fill_manual(name = "Type of Mutation", values = FuncColour)
                 } else {

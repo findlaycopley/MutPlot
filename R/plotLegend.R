@@ -10,7 +10,7 @@ plotLegend <- function(ReturnClass) {
                 get_legend(ReturnClass@plots$Waterfall + MutTheme)
                 )
 
-        ReturnClass@plots[["CountLegend"]] <-  as.ggplot(
+        ReturnClass@plots[["CountLegend"]] <-  as_ggplot(
                 get_legend(ReturnClass@plots$SampleCount + MutTheme)
                 )
         ReturnClass

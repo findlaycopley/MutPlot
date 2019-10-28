@@ -14,6 +14,7 @@ plotWaterfall <- function(ReturnClass) {
                 geom_tile(width=0.9, height=0.9) +
                 labs(x = "Sample", y = "Gene", fill = "Count") +
                 scale_fill_brewer(name = "Number of mutations", palette="Paired") +
+                MutTheme +
                 theme(axis.text.x = element_text(angle=45, hjust=1,vjust=1),
                       panel.background = element_blank(),
                       axis.line = element_line())
