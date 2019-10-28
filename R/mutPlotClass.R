@@ -22,7 +22,7 @@ MutationPlot <- setClass("MutationPlot",
 
 
 MutTheme <- theme_classic() +
-        theme(axis.text = element_text(size=8),
+        theme(axis.text = element_text(size=2),
               legend.background = element_blank(),
               legend.position = "bottom",
               legend.box = "horizontal",
@@ -31,3 +31,4 @@ MutTheme <- theme_classic() +
                                           face = "bold"),
               legend.key.height = unit(0.2, "cm")
         )
+theme_set(MutTheme)

@@ -15,7 +15,6 @@ plotGeneCount <- function(ReturnClass, FuncColour = FALSE) {
                 geom_bar(stat = "identity") +
                 labs(y = "Count", fill = "Type of Mutation") +
                 coord_flip() +
-                MutTheme +
                 theme(legend.position = "none",
                       axis.text.y = element_blank(),
                       axis.ticks.y = element_blank(),
