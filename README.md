@@ -92,3 +92,9 @@ MutationPlot <- ComboMutPlot(MutationPlot)
 This will return a plot that looks like this (generated using the example data):
 
 ![plot example](https://github.com/findlaycopley/MutPlot/blob/master/testData.png)
+
+The whole pipeline can be run in one line with the following function:
+
+```R
+mutationPlot(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info")
+```
