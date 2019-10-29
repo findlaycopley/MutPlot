@@ -77,7 +77,8 @@ The pipeline is run as follows:
 ```R
 ## Build an object of the MutationPlot class from the data.
 MutationPlot <- prepareMutData(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info")
-## Plots a waterfall plot of gene vs sample. Tiles are coloured by the number of mutations in that sample/gene
+## Plots a waterfall plot of gene vs sample. 
+## Tiles are coloured by the number of mutations in that sample/gene
 MutationPlot <- plotWaterfall(MutationPlot)
 ## Plots a bar graph of the number of mutations per gene, bars coloured by mutation info
 MutationPlot <- plotGeneCount(MutationPlot)
