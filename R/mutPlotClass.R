@@ -31,4 +31,4 @@ MutTheme <- theme_classic() +
                                           face = "bold"),
               legend.key.height = unit(0.2, "cm")
         )
-theme_set(MutTheme)
+
