@@ -1,8 +1,10 @@
-#'
+#' @title plotWaterfall function
 #' @param ReturnClass instance of MutationPlot class
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
+#' ## Pass the function a MuationPlot object
+#' plotWaterfall(MutationPlot)
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
 plotWaterfall <- function(ReturnClass) {

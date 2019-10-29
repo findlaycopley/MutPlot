@@ -1,9 +1,11 @@
-#'
+#' @title plotGeneCount function
 #' @param ReturnClass instance of MutationPlot class
 #' @param FuncColour list - optional colours specified for the columns
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
+#' ## Pass the function a MuationPlot object
+#' plotGeneCount(MutationPlot)
 
 plotGeneCount <- function(ReturnClass, FuncColour = FALSE) {
         ReturnClass@plots[["GeneCount"]] <- ggplot(ReturnClass@plotdata$GeneData,

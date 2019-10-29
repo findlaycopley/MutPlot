@@ -1,11 +1,14 @@
 Package: MutPlot
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Generates a plot of mutation data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Findlay Bewicke-Copley
+Maintainer: Findlay Bewicke-Copley <findlaycopley@hotmail.co.uk>
+Description: This package generates a plot of mutation data
+    It includes which samples have mutations in which genes (and how many).
+    How many mutations each gene has.
+    How many mutations each sample has.
+    Information about those mutations
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true

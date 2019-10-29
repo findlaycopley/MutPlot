@@ -4,7 +4,7 @@
 \name{Data}
 \alias{Data}
 \title{Create The Mutation Plot}
-\format{An object of class \code{data.frame} with 4 rows and 3 columns.}
+\format{An object of class \code{data.frame} with 5 rows and 3 columns.}
 \usage{
 Data
 }

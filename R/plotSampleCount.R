@@ -1,9 +1,12 @@
-#'
+#' @title plotSampleCount function
 #' @param ReturnClass Description
 #' @param FuncColour list - optional colours specified for the columns
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
+#' ## Pass the function a MuationPlot object
+#' plotSampleCount(MutationPlot)
+
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
 plotSampleCount <- function(ReturnClass, FuncColour = FALSE) {

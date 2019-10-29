@@ -1,4 +1,4 @@
-#'
+#' @title prepareMutData function
 #' @param Data Data frame of mutation data
 #' @param SampleCol string - column name for samples
 #' @param GeneCol string - column name for gene names
@@ -6,6 +6,10 @@
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
+#' ## Pass the function a dataframe of mutation calls, and the names of the columns to use.
+#' ## Need the following columns: Sample, Gene, InfoCol
+#' plotWaterfall(MutationPlot)
+#' plotWaterfall(MutationPlot, SampleCol="Sample", GeneCol="Gene", InfoCol="Info")
 
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
