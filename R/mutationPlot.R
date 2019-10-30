@@ -18,7 +18,7 @@ ExampleMutationData <- cbind(c("Sample1","Sample1","Sample1","Sample2","Sample2"
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
 mutationPlot <- function(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info", FuncColour = FALSE) {
-        ReturnClass <- prepareMutData(Data)
+        ReturnClass <- prepareMutData(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info")
         ReturnClass <- plotWaterfall(ReturnClass)
         ReturnClass <- plotGeneCount(ReturnClass)
         ReturnClass <- plotSampleCount(ReturnClass)
