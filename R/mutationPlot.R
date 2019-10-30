@@ -5,11 +5,12 @@
 #' @param InfoCol string - column name for variant info (used to colour bar charts)
 #' @param FuncColour list - optional colours specified for the columns
 #' @keywords Mutation Waterfall
-#' @export
+#' @export mutationPlot
+#' @export ExampleMutationData
 #' @examples
 #' mutationPlot(Data, "SampleName", "GeneName", "Info")
 
-Data <- cbind(c("Sample1","Sample1","Sample1","Sample2","Sample2"),
+ExampleMutationData <- cbind(c("Sample1","Sample1","Sample1","Sample2","Sample2"),
               c("Gene1","Gene2","Gene2","Gene2","Gene3"),
               c("Missense","Missense","Frame shift","Frame shift","Missense")) %>%
         as.data.frame() %>%
