@@ -16,8 +16,7 @@ ComboMutPlot <- function(ReturnClass) {
                 ({ReturnClass@plots$WaterLegend +
                                 ReturnClass@plots$CountLegend +
                                 plot_layout(ncol=1) }) +
-                plot_layout(heights=c(10,50,10)) +
-                plot_theme(padding=unit(c(10,10,10,10), "pt"))
+                plot_layout(heights=c(10,50,10))
         print(ReturnClass@plots$FinalPlot)
         ReturnClass
 }
