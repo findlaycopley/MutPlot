@@ -4,10 +4,12 @@
 \alias{ComboMutPlot}
 \title{Create The Mutation Plot}
 \usage{
-ComboMutPlot(ReturnClass)
+ComboMutPlot(ReturnClass, PRINT = FALSE)
 }
 \arguments{
 \item{ReturnClass}{instance of MutationPlot class}
+
+\item{PRINT}{TRUE/FALSE - print the final plot?}
 }
 \description{
 Create The Mutation Plot

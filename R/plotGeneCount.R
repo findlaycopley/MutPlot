@@ -1,6 +1,6 @@
 #' @title plotGeneCount function
 #' @param ReturnClass instance of MutationPlot class
-#' @param FuncColour list - optional colours specified for the columns
+#' @param Colour_list list - optional colours specified for the columns
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
