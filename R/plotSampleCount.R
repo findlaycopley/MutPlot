@@ -1,6 +1,6 @@
 #' @title plotSampleCount function
 #' @param ReturnClass Description
-#' @param FuncColour list - optional colours specified for the columns
+#' @param Colour_List list - optional colours specified for the columns
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
