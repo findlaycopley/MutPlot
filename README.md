@@ -98,4 +98,24 @@ The whole pipeline can be run in one line with the following function:
 
 ```R
 mutationPlot(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info")
+## This version will not plot the final plot when the function is called.
+mutationPlot(Data, SampleCol="Sample", GeneCol="Gene", InfoCol="Info", PRINT=FALSE)
+```
+## Colouring to your own tastes
+
+Currently the package lets ggplot2 pick the colours for the bar plots by default.
+However using the argument "Colour_list" allows you to specify the colours for the different groups.
+This argument accepts a named vector. The names as the levels of the factors and the items in the list are the colours you want them to be.
+You need to specify a colour for each level in the InfoCol.
+
+e.g.
+
+```R
+Colour_List <- c("Missense" = "Blue",
+		"Frame shift" = "Red")
+mutationPlot(ExampleMutationData,
+		SampleCol="Sample",
+		GeneCol="Gene",
+		InfoCol="Info",
+		Colour_List = Colour_List)
 ```
