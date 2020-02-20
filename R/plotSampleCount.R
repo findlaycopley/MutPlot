@@ -9,7 +9,7 @@
 
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
-plotSampleCount <- function(ReturnClass, FuncColour = FALSE) {
+plotSampleCount <- function(ReturnClass, Colour_List = FALSE) {
         ReturnClass@plots[["SampleCount"]] <- ggplot(ReturnClass@plotdata$SampleData,
                               aes(
                                       x = as.factor(SampleCol),
@@ -24,8 +24,8 @@ plotSampleCount <- function(ReturnClass, FuncColour = FALSE) {
                       panel.background = element_blank(),
                       axis.line.y = element_line()
                 ) +
-                if (typeof(FuncColour) == "character" ) {
-                        scale_fill_manual(name = "Type of Mutation", values = FuncColour)
+                if (typeof(Colour_List) == "character" ) {
+                        scale_fill_manual(name = "Type of Mutation", values = Colour_List)
                 } else {scale_fill_discrete(name = "Type of Mutation")
                 }
         ReturnClass

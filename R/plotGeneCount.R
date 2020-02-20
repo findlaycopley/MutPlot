@@ -7,7 +7,7 @@
 #' ## Pass the function a MuationPlot object
 #' plotGeneCount(MutationPlot)
 
-plotGeneCount <- function(ReturnClass, FuncColour = FALSE) {
+plotGeneCount <- function(ReturnClass, Colour_List = FALSE) {
         ReturnClass@plots[["GeneCount"]] <- ggplot(ReturnClass@plotdata$GeneData,
                             aes(x = factor(GeneCol,
                                            levels=ReturnClass@plotdata$GeneOrder),
@@ -24,8 +24,8 @@ plotGeneCount <- function(ReturnClass, FuncColour = FALSE) {
                       panel.background = element_blank(),
                       axis.line.x = element_line()
                       ) +
-                if (typeof(FuncColour) == "character" ) {
-                        scale_fill_manual(name = "Type of Mutation", values = FuncColour)
+                if (typeof(Colour_List) == "character" ) {
+                        scale_fill_manual(name = "Type of Mutation", values = Colour_List)
                 } else {
                         scale_fill_discrete(name = "Type of Mutation")
                 }

@@ -1,12 +1,13 @@
 #' Create The Mutation Plot
 #' @param ReturnClass instance of MutationPlot class
+#' @param PRINT TRUE/FALSE - print the final plot?
 #' @keywords Mutation Waterfall
 #' @export
 #' @examples
 #' mutationPlot(Data, "SampleName", "GeneName", "Info")
 
 ## FuncColour=c("frameshift deletion" = "#7CAE00","." = "#00BFC4","nonsynonymous SNV" = "#F8766D")
-ComboMutPlot <- function(ReturnClass) {
+ComboMutPlot <- function(ReturnClass, PRINT = FALSE) {
         ##theme_set(MutTheme)
         ReturnClass@plots[["FinalPlot"]] <- ReturnClass@plots$SampleCount + theme(legend.position = "none") +
                 plot_spacer() +
@@ -17,6 +18,8 @@ ComboMutPlot <- function(ReturnClass) {
                                 ReturnClass@plots$CountLegend +
                                 plot_layout(ncol=1) }) +
                 plot_layout(heights=c(10,50,10))
-        print(ReturnClass@plots$FinalPlot)
+        if ( PRINT == TRUE ) {
+                print(ReturnClass@plots$FinalPlot)
+                }
         ReturnClass
 }
