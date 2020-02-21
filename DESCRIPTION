@@ -1,7 +1,7 @@
 Package: MutPlot
 Type: Package
 Title: Generates a plot of mutation data
-Version: 0.1.0
+Version: 0.2.0
 Author: Findlay Bewicke-Copley
 Maintainer: Findlay Bewicke-Copley <findlaycopley@hotmail.co.uk>
 Description: This package generates a plot of mutation data
