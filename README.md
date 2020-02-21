@@ -111,11 +111,12 @@ You need to specify a colour for each level in the InfoCol.
 e.g.
 
 ```R
-Colour_List <- c("Missense" = "Blue",
-		"Frame shift" = "Red")
+Colour_List <- c("Missense" = "goldenrod2",
+		"Frame shift" = "cyan1")
 mutationPlot(ExampleMutationData,
 		SampleCol="Sample",
 		GeneCol="Gene",
 		InfoCol="Info",
 		Colour_List = Colour_List)
 ```
+![plot example](https://github.com/findlaycopley/MutPlot/blob/master/testData_customColour.png)
